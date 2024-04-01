@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__heading-row">
+          <h1 class="header__title">todo</h1>
+          <div class="header__theme-switch">
+            <button
+              class="header__theme-switch-button"
+              id="switch"
+              tabindex="0"
+            >
+              <img
+                src="images/icon-moon.svg"
+                class="theme-icon theme-light"
+                alt="moon-icon"
+              />
+              <img
+                src="images/icon-sun.svg"
+                class="theme-icon theme-dark"
+                alt="moon-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="user__form">
+          <label name="usertext" for="user-text" class="user__form-label">
+            <span class="user__form-icon"></span>
+            <input
+              type="text"
+              name="usertext"
+              class="user__form-text"
+              id="user-text"
+              placeholder="Create a new todo..."
+            />
+          </label>
+        </section>
+        <div class="todo">
+          <ul class="todo__list"></ul>
+          <div class="controls">
+            <span class="controls__list-count">No Tasks left</span>
+            <div class="controls__buttons">
+              <button class="btn filter__btn--isActive" data-filter="all">
+                All
+              </button>
+              <button class="btn" data-filter="active">Active</button>
+              <button class="btn" data-filter="completed">Completed</button>
+            </div>
+            <button class="btn controls__clear-completed">
+              Clear Completed
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <!-- frontend mentor attribution -->
+      <footer class="frontend-mentor">
+        <p class="instructions">Drag and Drop to reorder Tasks</p>
+        <div class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener"
+            >Frontend Mentor</a
+          >. Coded by
+          <a
+            rel="noopener"
+            target="_blank"
+            href="#https://www.linkedin.com/in/alaa-elsayed-mohammed/"
+            >Alaa Elsayed Mohammed</a
+          >.
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
